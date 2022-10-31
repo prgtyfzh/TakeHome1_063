@@ -13,12 +13,12 @@ and open the template in the editor.
     <body>
         <h1>REKOMENDASI TEMPAT HEALING DONG KAK?!</h1>
         <hr/>
-        <form action="/mainpage">
+        <form action="/mainpage" method="POST" enctype="multipart/form-data">
             NAMA TEMPAT : <input type="text" name="nama"/>
             <br/><br/><br/>
             LOKASI : <input type="text" name="lokasi"/>
             <br/><br/><br/>
-            GAMBAR : <input type="file" name="gambar"/>
+            GAMBAR : <input type="file" name="gambar" class="form-control-file"/>
             <br/><br/><br/>
             <input type="submit" value="SIMPAN"/>
         </form>

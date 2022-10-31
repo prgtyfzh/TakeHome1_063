@@ -13,10 +13,10 @@ and open the template in the editor.
     <body>
         <h1>INI DIA REKOMENDASINYA KAK</h1>
         <hr/>
-        <l th:text="${paketnama}"></l>
+        NAMA TEMPAT : <l th:text="${paketnama}"></l>
         <br/><br/>
-        <l th:text="${paketlokasi}"></l>
+        LOKASI : <l th:text="${paketlokasi}"></l>
         <br/><br/>
-        <l th:file="${paketgambar}"><l/>
+        <img th:src="${msg}"/>
     </body>
 </html>
