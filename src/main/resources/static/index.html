@@ -11,16 +11,36 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <style>
+            fieldset{
+                width: 800px;
+                background-color: #DCDCDC;
+            }
+            p{
+                float: left;
+            }
+        </style>
+         
+        <center><fieldset>
         <h1>REKOMENDASI TEMPAT HEALING DONG KAK?!</h1>
         <hr/>
+        
+    
         <form action="/mainpage" method="POST" enctype="multipart/form-data">
+            <p>
             NAMA TEMPAT : <input type="text" name="nama"/>
+            </p>
             <br/><br/><br/>
+            <p>
             LOKASI : <input type="text" name="lokasi"/>
+            </p>
             <br/><br/><br/>
+            <p>
             GAMBAR : <input type="file" name="gambar" class="form-control-file"/>
-            <br/><br/><br/>
-            <input type="submit" value="SIMPAN"/>
+            </p>
+            <br/><br/><br/><br/>
+            <input type="submit" value="SIMPAN" style="float: left;"/>
         </form>
+        </fieldset></center>
     </body>
 </html>
